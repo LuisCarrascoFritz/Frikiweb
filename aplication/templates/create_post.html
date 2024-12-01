@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>CREAR POST</title>
+        {% load static %}
+
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+<body>
+    <h1>Crear un Post</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Crear</button>
+    </form>
+</body>
+</html>

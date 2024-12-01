@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>FRIKIWEB</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Bienvenido a Mi Sitio</h1>
+    <ul>
+        <li><a href="{% url 'create_post' %}">Crear un Post</a></li>
+        <li><a href="{% url 'view_posts' %}">Ver Posts</a></li>
+        <li><a href="{% url 'register' %}">Registrarse</a></li>
+        <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
+    </ul>
+</body>
+</html>
