@@ -45,3 +45,6 @@ def login_user(request):
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
+
+def games_news(request):
+    return render(request, 'games_news.html')

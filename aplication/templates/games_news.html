@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>JUEGOS ACTUALES</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!DOCTYPE html>
+        <html lang="en">
+          <body>
+            <nav class="menu">
+                <ul>
+                  <img id="logoPagina" src="{% static 'img/logo foro gaming.png' %}" alt="LogoPagina">
+                  <a href="{% url 'home' %}" id="foroG" class="bungee-spice-regular">Frikiweb</a>
+                  <ul>
+                    <li><a href="{% url 'create_post' %}">Crear un Post</a></li>
+                    <li><a href="{% url 'view_posts' %}">Ver Posts</a></li>
+                    <li><a href="{% url 'register' %}">Registrarse</a></li>
+                    <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
+                    <li><a href="{% url 'games_news' %}">Juegos Actuales</a></li>
+                </ul>
+                  </ul>
+                  
+                  <section class="main-content", style="
+                  padding-bottom: 100%"
+                  > 
+                  </ul>
+              <section class="main-content">
+                <br>
+                <section class="JUEGOS-ACTUALES">
+                <h1>JUEGOS ACTUALES</h1>
+                <div id="deals"></div>
+
+        
+                <script src="{% static 'js/index.js' %}"></script>
+                </section>
+                
+                <img id="plataformas" src="{% static 'img/logo nintendo.png' %}" alt="Nintendo">
+                <img id="plataformas" src="{% static 'img/logo PC.png' %}" alt="PC">
+                <img id="plataformas" src="{% static 'img/logo Playstation.png' %}" alt="Playstation">
+                
+              
+              </section>         
+
+              <script src="{% static 'js/index.js' %}"></script>
+              
+              </body>
+        </html>
+

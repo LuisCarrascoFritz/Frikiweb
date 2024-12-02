@@ -4,7 +4,23 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
-<body>
+    <body>
+        <nav class="menu">
+            <ul>
+                <img id="logoPagina" src="{% static 'img/logo foro gaming.png' %}" alt="LogoPagina">
+                <a href="{% url 'home' %}" id="foroG" class="bungee-spice-regular">Frikiweb</a>
+              <ul>
+                <li><a href="{% url 'create_post' %}">Crear un Post</a></li>
+                <li><a href="{% url 'view_posts' %}">Ver Posts</a></li>
+                <li><a href="{% url 'register' %}">Registrarse</a></li>
+                <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
+                <li><a href="{% url 'games_news' %}">Juegos Actuales</a></li>
+            </ul>
+              </ul>
+              
+              <section class="main-content", style="
+              padding-bottom: 100%"
+              > 
     <h1>Iniciar sesión</h1>
     <form method="post">
         {% csrf_token %}
